@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'Font-paragrafo-bold';
+    src: url(assets/fontes/Inter/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Font-título-bold';
+    src: url(assets/fontes/Titillium_Web/TitilliumWeb-Bold.ttf);
+}
+
+/* Reset da página */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Configurações genpericas que vai dazer o conteúdo ficar preso no site */
+
+.container-grid{
+    width: 90%;
+    margin:0 auto;
+    max-width:1200px
+}
+
+/* Comneçando estilização do header */
+/* Realizar scroll suave na minha página html */
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #4e53d4;
+    height: 90px;
+
+}
+/* O Header Flex é responsável pela organização dos componentes do header */
+.header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Remover a estilização que vem por padrão nos links da ul li */
+.links-header ul li {
+    /* remove as bolinhas laterais */
+    list-style-type: none;
+    text-decoration: none;
+}
+/* Realiza a estilização dos links dentro da nossa header */
+
+.links-header .nav-links a {
+    /* Realiza a remoção do sublinhado dos links */
+    text-decoration: none;
+    color: white;
+    font-family: font-paragrafo-bold;
+    font-size: 20px;
+    /* Realiza o espaçamento interno dos links */
+    letter-spacing: 1px;
+
+}
+/* Realiza o efeito de quando passa o mouse sobre os links e o mesmo muda de cor para preto */
+.links-header .nav-links a:hover{
+    color:black;
+    /* Tempo para realizar a mudança de cor */
+    transition:0.2s;
+}
+/* Realiza o espaçamento dos links e deixa os mesmos na horizontal */
+    .nav-links{
+        width: 350px;
+        display: flex;
+        justify-content: space-evenly;
+    
+}
+
+/* Realiza a estilização do input-search dentro do header declarando as fontes, as bordas e a largura e altura */
+ .input-search input {
+    width: 387px;
+    height: 41px;
+    border-radius: 20px;
+    border:none;
+    background: none;
+    outline: none;
+    font-family: font-paragrafo-bold;
+    font-size:15px;
+
+ }
+/* Estilização da cor do fundo do input */
+ .input-search {
+    background-color: white;
+    border-radius:20px;
+    padding-left: 10px;
+ }
+
+/* Realiza o espaçamento dos icons e deixa os mesmos na horizontal */
+    .nav-icons {
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+
+    }
+/* MAIN */
+
+.banner{
+    background-image: url(assets/img/eric-masur-AEyam8UN6NY-unsplash\ 1.png);
+    height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    
+}
+
+
+
+
+
+
+
